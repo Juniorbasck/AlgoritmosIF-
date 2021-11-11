@@ -1,0 +1,41 @@
+
+#include <cstdlib>
+
+#include "retornarNum.h"
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+
+    retornarNum *objNum = new retornarNum(); 
+    objNum->lerDados(); 
+    objNum->numdescobre(); 
+    
+    return 0;
+}
+
+void retornarNum::lerDados(){
+    
+    cout<<"digite o primeiro numero"<<endl; 
+    cin>>this->num1; 
+    cout<<"digite o primeiro numero"<<endl; 
+    cin>>this->num2; 
+    
+}
+
+int retornarNum::numdescobre(){
+    
+  float R; 
+    
+    if (num1 > num2)
+        R == num2; 
+    else 
+        R == num1; 
+  
+    return R;             
+}
+
+
